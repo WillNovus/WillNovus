@@ -19,7 +19,7 @@ Here are some ideas to get you started:
 # ♟️ 🦾 Will Gabriel
 **`Digital Nomad (Ex Data Engineer @KiteFinancial| ML Engineer |)`**
 
-I am a Machine Learning Engineer with prior background in data engineering at a Fintech/web3 startup. Having expertise in Tensorflow Extended, Docker, GCP, and Linux, I excel in architecting robust ML systems for production environments. My repertoire includes crafting APIs and pipelines to seamlessly gather, preprocess, and deploy models, specializing in tackling NLP, time series, and traditional tabular data challenges. I'm driven by the pursuit of pushing ML boundaries, particularly fascinated by autonomous agents, meta-learning, multi-task learning, and strategic planning. When not immersed in the world of AI, you'll likely find me honing my skills on the chessboard, a personal escape.
+I am a Machine Learning Engineer with prior background in data engineering at a Fintech/web3 startup. Having expertise in Tensorflow Extended, Docker, GCP, and Linux, I excel in architecting robust ML systems for production environments. My repertoire includes crafting APIs and pipelines to seamlessly gather, preprocess, and deploy models, specializing in tackling NLP, time series, and traditional tabular data challenges. I'm driven by the pursuit of pushing ML boundaries, particularly fascinated by autonomous agents, meta-learning, multi-task learning, and strategic planning. When not immersed in the world of AI, you'll likely find me on the chessboard, a personal escape.
 
 
 ### Connect with me:
