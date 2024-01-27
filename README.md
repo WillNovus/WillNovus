@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### Hi there 👋
 
 # ♟️ 🦾 Will Gabriel
