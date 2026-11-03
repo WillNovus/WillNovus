@@ -3,13 +3,14 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=190&section=header&text=Will%20Gabriel&fontSize=50&fontColor=ffffff&fontAlignY=36&desc=AI%20%2F%20ML%20Engineer&descSize=20&descAlignY=58" alt="Will Gabriel — AI/ML Engineer" width="100%" />
 
 <a href="https://github.com/WillNovus">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1400&color=2EA8FF&center=true&vCenter=true&width=640&lines=Building+production+multi-agent+systems;LangGraph+%C2%B7+RAG+%C2%B7+LLM+Orchestration;MLOps+%26+end-to-end+ML+infrastructure;Computer+vision+for+identity+verification" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1400&color=2EA8FF&center=true&vCenter=true&width=640&lines=Founder+%26+AI+Engineer+%40+Trybe;Building+production+multi-agent+systems;LangGraph+%C2%B7+RAG+%C2%B7+LLM+Orchestration;Recommender+systems+%26+vector+search" alt="Typing SVG" />
 </a>
 
 <p>
   <a href="https://www.linkedin.com/in/will-gabriel-591341182/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:gabrielwill666@gmail.com?subject=[GitHub]%20Hello%20Will"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://x.com/WillNovus"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white" alt="X" /></a>
+  <a href="https://trybe.wiki"><img src="https://img.shields.io/badge/Trybe-Live-14B8A6?style=for-the-badge" alt="Trybe — live" /></a>
 </p>
 
 </div>
@@ -18,11 +19,11 @@
 
 ## About Me
 
-I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production: hierarchical multi-agent architectures, retrieval and memory layers, and the APIs that serve them.
+I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production: stateful agents, retrieval and memory layers, recommendation engines, and the infrastructure that serves them.
 
-- 🔭 Most recently **Founding AI Engineer at [Solaa AI](https://solaa.app)** (NTM Technologies), where I built an autonomous academic research and report-generation platform on LangGraph
-- 📊 Previously **Data Engineer / R&D at Kite Tech**, a web3 fintech, working on customer analytics and KYC facial recognition
-- 🧠 Interested in autonomous agents, agent evaluation, and reliable LLM systems
+- 🚀 **Founder & AI Engineer at [Trybe](https://trybe.wiki)**, a live social platform where an AI gets to know each member over many conversations and introduces them to people they share real values with
+- 🔭 Previously **Founding AI Engineer at [Solaa AI](https://solaa.app)**, an autonomous academic research platform
+- 📊 Before that, **Data Engineer / R&D at Kite Tech**, a web3 fintech
 - ♟️ Away from the keyboard: National Junior Chess Champion (OSFI 2018) and West African University Games bronze medallist
 
 ---
@@ -30,15 +31,26 @@ I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production:
 ## 💼 Experience
 
 <details open>
-<summary><b>Founding AI Engineer · Solaa AI (NTM Technologies Ltd)</b> &nbsp;·&nbsp; <i>Sept 2025 – Mar 2026</i></summary>
+<summary><b>Founder & AI Engineer · <a href="https://trybe.wiki">Trybe</a></b> &nbsp;·&nbsp; <i>Mar 2026 – Present</i></summary>
 <br />
 
-- Designed and deployed a **hierarchical multi-agent architecture** in LangGraph, with Supervisor, Researcher, Writer, Editor, and Citation subgraphs, to automate end-to-end academic research and report generation
-- Built a **deterministic router** using structured outputs to send requests to deep research, shallow web search, or conversation, with confidence thresholds that trigger clarifying questions
-- Added **human-in-the-loop** checkpoints so users can validate and steer research direction before the costly writing phase begins
-- Added **cross-session personalization** using Mem0 and a dedicated Qdrant collection to extract, index, and inject user facts and preferences into the agent's context
-- Built a **Citation Agent** that checks drafts against known sources and corrects hallucinated references before the final DOCX export
-- Built an **async FastAPI backend** with **SSE streaming** of tokens, tool calls, and reasoning traces to the Next.js frontend
+Trybe optimises for the depth of human connection, not attention. Members don't browse or swipe. They talk to the **Gatekeeper**, an AI that learns who they are and introduces them only when a real, mutual basis exists.
+
+- Built the **Gatekeeper agent** (LangGraph + Deep Agents, PostgreSQL checkpointing, Mem0 memory). It interviews members across sessions and maintains an evolving profile of their values, personality, attachment style and how they reason
+- Designed **intent routing** that sorts each request into one of three pathways: be understood, meet someone, or find a community. The agent only records intent; a separate matching engine makes every decision, so no phrasing of a request can force an introduction
+- Built a **hybrid matching engine** that blends 3072-dim Gemini personality embeddings (Qdrant ANN), a time-decayed Neo4j concept graph (strength-weighted Jaccard) and an 11-factor compatibility score
+- Shipped **values-based introductions grounded in members' own words**. Values are mapped to Schwartz's basic human values, and each one must be backed by a verbatim quote and confirmed by a second model pass. A blind room then opens with Aria, an AI host, and identities are revealed only by mutual consent
+- Designed the **Authenticity Score**, a trust signal recomputed from an append-only event log with 180-day exponential decay
+- Took the platform live on **AWS EKS**: Rust/Axum microservices and a Python FastAPI AI service, RDS PostgreSQL with row-level-security multi-tenancy, ElastiCache Redis, a Next.js frontend on Vercel, and Prometheus/Grafana monitoring
+
+</details>
+
+<details>
+<summary><b>Founding AI Engineer · <a href="https://solaa.app">Solaa AI</a> (NTM Technologies Ltd)</b> &nbsp;·&nbsp; <i>Sept 2025 – Mar 2026</i></summary>
+<br />
+
+- Designed and deployed a **hierarchical LangGraph multi-agent system** (Supervisor, Researcher, Writer, Editor and Citation agents) for end-to-end academic research and report generation, with human-in-the-loop review before writing begins
+- Built a **Citation Agent** that corrects hallucinated references, **Mem0 + Qdrant** cross-session personalization, and an async **FastAPI** backend that streams tokens and agent traces over SSE
 
 </details>
 
@@ -58,8 +70,8 @@ I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production:
 
 | Project | Description | Stack |
 |:--|:--|:--|
+| **[Trybe](https://trybe.wiki)** <sub>`live`</sub> | Social platform for deep human connection. An AI Gatekeeper learns who members are and introduces them on a verified, mutual basis. | LangGraph · DeepSeek · Gemini · Qdrant · Neo4j · Rust · AWS EKS |
 | **[Autolytica](https://github.com/WillNovus/Autolytica)** | AML intelligence platform with AI data agents for transaction screening and real-time risk scoring. Includes a self-correcting multi-agent **NL2SQL** engine with semantic caching. | LangGraph · LangChain · FastAPI · Next.js |
-| **Trybe** <sub>`pending deployment`</sub> | Stateful multi-turn AI workflows with a Gatekeeper Agent for intake assessments, plus a recommendation engine combining personality embeddings, **ANN search**, and graph clustering. | LangGraph · Gemini · Qdrant · Neo4j · PostgreSQL |
 | **Eagle-Finder** | Facial recognition microservice for identity verification and multi-face recognition in a single request. | FastAPI · InsightFace (ArcFace + RetinaFace) · FAISS · MongoDB |
 | **[Taxi Demand Predictor](https://github.com/WillNovus/Taxi_Pred_Service)** | Serverless end-to-end ML batch-scoring service that forecasts taxi demand in NYC. | Python · Serverless · Batch Scoring |
 
@@ -71,10 +83,10 @@ I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production:
 |:--|:--|
 | **LLMs & Agents** | ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langgraph&logoColor=white) ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white) ![Mem0](https://img.shields.io/badge/Mem0-111111?style=flat-square) |
 | **Deep Learning & ML** | ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![JAX](https://img.shields.io/badge/JAX-5E97F6?style=flat-square) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) |
-| **Languages & APIs** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) ![Axum](https://img.shields.io/badge/Axum-000000?style=flat-square&logo=rust&logoColor=white) |
-| **Data & Vector Stores** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat-square&logo=qdrant&logoColor=white) ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white) ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square) |
+| **Languages & APIs** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![Axum](https://img.shields.io/badge/Axum-000000?style=flat-square&logo=rust&logoColor=white) ![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white) |
+| **Data & Vector Stores** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=flat-square&logo=qdrant&logoColor=white) ![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white) ![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat-square) |
 | **MLOps** | ![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat-square&logo=mlflow&logoColor=white) ![ZenML](https://img.shields.io/badge/ZenML-431D93?style=flat-square) ![Hopsworks](https://img.shields.io/badge/Hopsworks-1EB182?style=flat-square) ![TFDV](https://img.shields.io/badge/TFDV-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) |
-| **Cloud & Infra** | ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white) |
+| **Cloud & Infra** | ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat-square) ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=flat-square&logo=googlecloud&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white) ![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat-square&logo=minio&logoColor=white) |
 | **Monitoring & CI/CD** | ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white) ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white) ![TensorBoard](https://img.shields.io/badge/TensorBoard-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) |
 
 ---
@@ -83,10 +95,10 @@ I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production:
 
 | Certification | Issuer | Date |
 |:--|:--|:--|
-| Deep Learning Specialization | DeepLearning.AI | Sept 2023 |
-| Unsupervised Learning, Recommenders & Reinforcement Learning | DeepLearning.AI | July 2023 |
-| Machine Learning Engineering in Production (MLOps) Specialization | DeepLearning.AI | May 2023 |
-| Machine Learning with Python | IBM | Apr 2022 |
+| [Deep Learning Specialization](https://www.credly.com/badges/9ebdf945-56de-47fe-b21d-c3cd58303b2d) | DeepLearning.AI | Sept 2023 |
+| [Unsupervised Learning, Recommenders & Reinforcement Learning](https://www.coursera.org/account/accomplishments/verify/KMNUYHH9RCX9) | DeepLearning.AI | July 2023 |
+| [Machine Learning Engineering in Production (MLOps) Specialization](https://www.linkedin.com/in/will-gabriel-591341182/overlay/1635527836626/single-media-viewer/?profileId=ACoAACse0f0BZ5e890yg1pLbDcYiDpG1Q_hs7MI) | DeepLearning.AI | May 2023 |
+| [Machine Learning with Python](https://www.credly.com/badges/c6ea972c-a62e-4823-89e7-d7c882b3a64c) | IBM | Apr 2022 |
 
 ---
 
