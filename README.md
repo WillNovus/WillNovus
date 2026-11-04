@@ -24,7 +24,7 @@ I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production:
 - 🚀 **Founder & AI Engineer at [Trybe](https://trybe.wiki)**, a live AI-led social platform
 - 🔭 Previously **Founding AI Engineer at [Solaa AI](https://solaa.app)**, an autonomous academic research platform
 - 📊 Before that, **Data Engineer / R&D at Kite Tech**, a web3 fintech
-- ♟️ Away from the keyboard: National Junior Chess Champion (OSFI 2018) and West African University Games bronze medallist
+- ♟️ Away from the keyboard, I'm usually at the chessboard. Think you can beat me? **[Challenge me on Chess.com](https://www.chess.com/member/will_novus)**
 
 ---
 
