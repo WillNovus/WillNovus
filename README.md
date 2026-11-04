@@ -28,52 +28,6 @@ I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production:
 
 ---
 
-## 💼 Experience
-
-<details open>
-<summary><b>Founder & AI Engineer · <a href="https://trybe.wiki">Trybe</a></b> &nbsp;·&nbsp; <i>Mar 2026 – Present</i></summary>
-<br />
-
-An AI-led social platform that introduces people who share real values.
-
-- Built the **Gatekeeper agent** (LangGraph, Mem0) that learns each member's values and personality across conversations
-- Built a **hybrid matching engine** combining Gemini embeddings (Qdrant), a Neo4j concept graph and an 11-factor compatibility score
-- Deployed on **AWS EKS** with Rust/Axum microservices, a FastAPI AI service and a Next.js frontend
-
-</details>
-
-<details>
-<summary><b>Founding AI Engineer · <a href="https://solaa.app">Solaa AI</a> (NTM Technologies Ltd)</b> &nbsp;·&nbsp; <i>Sept 2025 – Mar 2026</i></summary>
-<br />
-
-- Designed and deployed a **hierarchical LangGraph multi-agent system** (Supervisor, Researcher, Writer, Editor and Citation agents) for end-to-end academic research and report generation, with human-in-the-loop review before writing begins
-- Built a **Citation Agent** that corrects hallucinated references, **Mem0 + Qdrant** cross-session personalization, and an async **FastAPI** backend that streams tokens and agent traces over SSE
-
-</details>
-
-<details>
-<summary><b>Data Engineer / R&D · Kite Tech Ltd (UK)</b> &nbsp;·&nbsp; <i>Feb 2022 – Nov 2023</i></summary>
-<br />
-
-- Improved KYC **facial recognition** by moving from Google Cloud Vision to DeepFace models, cutting cosine-similarity loss by **~33%** on grayscale images. Added OCR (PyTesseract) for document validation
-- Ran time-series EDA and feature engineering for **RFM analysis, customer segmentation, persona development, and churn forecasting**
-- Worked with the founding team on a seed-stage escrow exchange platform aimed at financial inclusion across Africa
-
-</details>
-
----
-
-## 🚀 Featured Projects
-
-| Project | Description | Stack |
-|:--|:--|:--|
-| **[Trybe](https://trybe.wiki)** <sub>`live`</sub> | AI-led introductions between people who share real values. | LangGraph · DeepSeek · Gemini · Qdrant · Neo4j · Rust · AWS EKS |
-| **[Autolytica](https://github.com/WillNovus/Autolytica)** | AML intelligence platform with AI data agents for transaction screening and real-time risk scoring. Includes a self-correcting multi-agent **NL2SQL** engine with semantic caching. | LangGraph · LangChain · FastAPI · Next.js |
-| **Eagle-Finder** | Facial recognition microservice for identity verification and multi-face recognition in a single request. | FastAPI · InsightFace (ArcFace + RetinaFace) · FAISS · MongoDB |
-| **[Taxi Demand Predictor](https://github.com/WillNovus/Taxi_Pred_Service)** | Serverless end-to-end ML batch-scoring service that forecasts taxi demand in NYC. | Python · Serverless · Batch Scoring |
-
----
-
 ## 🧰 Tech Stack
 
 | Domain | Tools |
