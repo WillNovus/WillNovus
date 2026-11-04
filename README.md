@@ -21,7 +21,7 @@
 
 I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production: stateful agents, retrieval and memory layers, recommendation engines, and the infrastructure that serves them.
 
-- 🚀 **Founder & AI Engineer at [Trybe](https://trybe.wiki)**, a live social platform where an AI gets to know each member over many conversations and introduces them to people they share real values with
+- 🚀 **Founder & AI Engineer at [Trybe](https://trybe.wiki)**, a live AI-led social platform
 - 🔭 Previously **Founding AI Engineer at [Solaa AI](https://solaa.app)**, an autonomous academic research platform
 - 📊 Before that, **Data Engineer / R&D at Kite Tech**, a web3 fintech
 - ♟️ Away from the keyboard: National Junior Chess Champion (OSFI 2018) and West African University Games bronze medallist
@@ -34,14 +34,11 @@ I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production:
 <summary><b>Founder & AI Engineer · <a href="https://trybe.wiki">Trybe</a></b> &nbsp;·&nbsp; <i>Mar 2026 – Present</i></summary>
 <br />
 
-Trybe optimises for the depth of human connection, not attention. Members don't browse or swipe. They talk to the **Gatekeeper**, an AI that learns who they are and introduces them only when a real, mutual basis exists.
+An AI-led social platform that introduces people who share real values.
 
-- Built the **Gatekeeper agent** (LangGraph + Deep Agents, PostgreSQL checkpointing, Mem0 memory). It interviews members across sessions and maintains an evolving profile of their values, personality, attachment style and how they reason
-- Designed **intent routing** that sorts each request into one of three pathways: be understood, meet someone, or find a community. The agent only records intent; a separate matching engine makes every decision, so no phrasing of a request can force an introduction
-- Built a **hybrid matching engine** that blends 3072-dim Gemini personality embeddings (Qdrant ANN), a time-decayed Neo4j concept graph (strength-weighted Jaccard) and an 11-factor compatibility score
-- Shipped **values-based introductions grounded in members' own words**. Values are mapped to Schwartz's basic human values, and each one must be backed by a verbatim quote and confirmed by a second model pass. A blind room then opens with Aria, an AI host, and identities are revealed only by mutual consent
-- Designed the **Authenticity Score**, a trust signal recomputed from an append-only event log with 180-day exponential decay
-- Took the platform live on **AWS EKS**: Rust/Axum microservices and a Python FastAPI AI service, RDS PostgreSQL with row-level-security multi-tenancy, ElastiCache Redis, a Next.js frontend on Vercel, and Prometheus/Grafana monitoring
+- Built the **Gatekeeper agent** (LangGraph, Mem0) that learns each member's values and personality across conversations
+- Built a **hybrid matching engine** combining Gemini embeddings (Qdrant), a Neo4j concept graph and an 11-factor compatibility score
+- Deployed on **AWS EKS** with Rust/Axum microservices, a FastAPI AI service and a Next.js frontend
 
 </details>
 
@@ -70,7 +67,7 @@ Trybe optimises for the depth of human connection, not attention. Members don't 
 
 | Project | Description | Stack |
 |:--|:--|:--|
-| **[Trybe](https://trybe.wiki)** <sub>`live`</sub> | Social platform for deep human connection. An AI Gatekeeper learns who members are and introduces them on a verified, mutual basis. | LangGraph · DeepSeek · Gemini · Qdrant · Neo4j · Rust · AWS EKS |
+| **[Trybe](https://trybe.wiki)** <sub>`live`</sub> | AI-led introductions between people who share real values. | LangGraph · DeepSeek · Gemini · Qdrant · Neo4j · Rust · AWS EKS |
 | **[Autolytica](https://github.com/WillNovus/Autolytica)** | AML intelligence platform with AI data agents for transaction screening and real-time risk scoring. Includes a self-correcting multi-agent **NL2SQL** engine with semantic caching. | LangGraph · LangChain · FastAPI · Next.js |
 | **Eagle-Finder** | Facial recognition microservice for identity verification and multi-face recognition in a single request. | FastAPI · InsightFace (ArcFace + RetinaFace) · FAISS · MongoDB |
 | **[Taxi Demand Predictor](https://github.com/WillNovus/Taxi_Pred_Service)** | Serverless end-to-end ML batch-scoring service that forecasts taxi demand in NYC. | Python · Serverless · Batch Scoring |
