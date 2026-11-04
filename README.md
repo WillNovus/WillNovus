@@ -19,7 +19,7 @@
 
 ## About Me
 
-I'm an **AI/ML Engineer** who builds LLM-powered systems that run in production: stateful agents, retrieval and memory layers, recommendation engines, and the infrastructure that serves them.
+I am an **AI/ML Engineer** with experience in LLM-powered systems that run in production: stateful agents, retrieval and memory layers, recommendation engines, and the infrastructure that serves them.
 
 - 🚀 **Founder & AI Engineer at [Trybe](https://trybe.wiki)**, a live AI-led social platform
 - 🔭 Previously **Founding AI Engineer at [Solaa AI](https://solaa.app)**, an autonomous academic research platform
